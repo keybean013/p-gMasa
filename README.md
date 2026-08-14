@@ -8,7 +8,7 @@
     - All date -> Data(Ribbon) -> Text to column -> MDY
     - Store code -> Make the data type **"Number"**
     - Add the column se;;et **Seller name**, **OM**, **Banner**
-## NOTE: Lock all the column of base or the range column (Store code)
+## NOTE: LOCK ALL THE COLUMN OF BASE OR RANGE COLUMN (STORE CODE)
 
 
 
@@ -74,7 +74,7 @@
     - Populate product:barcode, product:category, product:brand and local site key by creating data to mapper.
     - the column **store code and name** - concat the **locala site key and store name**
 
-## NOTE: Mapper data fetching
+## NOTE: MAPPER DATA FETCHING
 - Local site key - 2
 - product: varcode - 3
 - product: Category - 4
