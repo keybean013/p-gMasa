@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Notes
 ## Attendance Daily Report
 
@@ -73,7 +72,22 @@
     - Copy the concatinated data from mapper to missing psku raw
     - populate the **store name, roic, om local store banner** and get the data from **MDM**
     - Populate product:barcode, product:category, product:brand and local site key by creating data to mapper.
-    - the column store code and name - concat the locala site key and store name
-=======
-# p-gMasa
->>>>>>> origin/main
+    - the column **store code and name** - concat the **locala site key and store name**
+
+## NOTE: Mapper data fetching
+- Local site key - 2
+- product: varcode - 3
+- product: Category - 4
+- product: product name - 6
+
+## MDM DATA FETCHING
+- open the PE result
+    - Concat product code and category 
+    - Filter the question to **Distributed**
+## Open the missing psku raw
+#
+- Concat the product code and category
+- **Vlookup** the visit date to PE file
+- Filter the **N/A's** and delete
+- Filter the 1900's years and delete the value and add 1 to target column and missing **PSKU**
+- Filter again the  date visited and select the **Current month** and add to **status**(Distributed), column **target** (1), column **Distributed** (1)
