@@ -103,3 +103,5 @@
     - Concat **Local Site Key**, **Product: barcode**, **Category**, **Visit date**
 - Concat with true or false
     - Concat **Local site key**, **Product: Barcode**, **Product: Category**
+
+## NOTE: STORE COUNT NOT INCLUDED IN ISKU REPORT
