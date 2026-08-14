@@ -91,3 +91,15 @@
 - Filter the **N/A's** and delete
 - Filter the 1900's years and delete the value and add 1 to target column and missing **PSKU**
 - Filter again the  date visited and select the **Current month** and add to **status**(Distributed), column **target** (1), column **Distributed** (1)
+
+#
+
+# ISKU REPORT
+
+- Same process like PSKU
+#
+## PIVOT 
+- Getting the **Latest** Column
+    - Concat **Local Site Key**, **Product: barcode**, **Category**, **Visit date**
+- Concat with true or false
+    - Concat **Local site key**, **Product: Barcode**, **Product: Category**
