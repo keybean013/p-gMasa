@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Notes
 ## Attendance Daily Report
 
@@ -73,3 +74,6 @@
     - populate the **store name, roic, om local store banner** and get the data from **MDM**
     - Populate product:barcode, product:category, product:brand and local site key by creating data to mapper.
     - the column store code and name - concat the locala site key and store name
+=======
+# p-gMasa
+>>>>>>> origin/main
