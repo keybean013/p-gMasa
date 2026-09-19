@@ -28,3 +28,26 @@
     ![alt text](src/images/pskuAndIsku/image-9.png)
     - Function pasted to entire column
     ![alt text](src/images/pskuAndIsku/image-10.png)
+- After that create **PIVOT** again, just ***CRL+A*** and create a **PIVOT** to get a **Mapper Data** but this time the columns that you need is **Local Site Key, Product: Barcode Text and Product: Category** and create a concat column and like True of false column, then concatinate the 3 columns **Local Site Key, Product: Barcode Text and Product: Category** and just put a ***1*** value in true or false column
+    - Creating **PIVOT** 
+    ![alt text](src/images/pskuAndIsku/image.png)
+    - Columns needed
+    ![alt text](src/images/pskuAndIsku/image-11.png)
+- After that open your ISKU and PSKU mapper and copy all the **CON** value and paste it in your **PIVOT** that ***created earlier***
+    - Opening and copying the **CON** column
+    - ***NOTE: Make sure you choose the PSKU sheet not ISKU, the Sheet located in BOTTOM LEFT of excel, the GREEN is the PSKU and the YELLOW is the ISKU***
+    ![alt text](src/images/pskuAndIsku/image-22.png)
+    - Pasting the data that copied from ***PSKU iSKU Mapper***
+    ![alt text](src/images/pskuAndIsku/image-33.png)
+- Next get all the ***N/As*** by comparing the ***concatinated*** value in your raw data and ***concatinated*** data from your **ISKU PSKU Mapper** using ***Vlookup***
+    - Functions to see the column that need to lookup
+    ![alt text](src/images/pskuAndIsku/image-44.png)
+    - Getting the ***N/As*** using **vlookup**
+    ![alt text](src/images/pskuAndIsku/image-55.png)
+- As you can see, there's value ***1*** that you get in the earlier ***VLOOKUP*** the meaning of that is that item is already exist in your raw data, so you can ignore that and get sa ***N/As*** only, coz the ***PURPOSE*** of that **VLOOKUP** is to get the item that ***DOESN'T*** exist in your **RAW DATA**, so just **FILTER** that column and choose only the ***N/As*** then copy all the ***N/As*** then ***paste*** it in the end of your ***Raw data*** and ***DELETE*** the value of ** STORE ID** that you copy earlier to ***populate*** the necessary columns including the ***header***
+    - Filtering the ***N/As***
+    ![alt text](src/images/pskuAndIsku/image-66.png)
+    - Copying all the ***N/As***
+    ![alt text](src/images/pskuAndIsku/image-88.png)
+    - Pasting all copied data from **PIVOT**
+    ![alt text](src/images/pskuAndIsku/image-99.png)
